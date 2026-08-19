@@ -1,0 +1,23 @@
+{
+  "name": "freebookleaf",
+  "version": "1.0.0",
+  "description": "Free book discovery website with Google Books API integration",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "build": "echo Static site - no build required",
+    "preview": "npm run dev",
+    "deploy": "echo Deploy via Cloudflare Pages dashboard or Git integration"
+  },
+  "keywords": [
+    "books",
+    "reading",
+    "google-books",
+    "static-site",
+    "cloudflare-pages"
+  ],
+  "author": "freebookleaf",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}

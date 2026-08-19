@@ -1,0 +1,28 @@
+# robots.txt for freebookleaf.com
+# This file guides web crawlers on which parts of the site to access
+
+User-agent: *
+Allow: /
+
+# Disallow access to error pages and private directories
+Disallow: /errors/
+Disallow: /css/
+Disallow: /js/
+Disallow: /.devin/
+
+# Disallow common development and configuration files
+Disallow: /*.json$
+Disallow: /*.md$
+Disallow: /*.yaml$
+Disallow: /*.yml$
+
+# Allow search engines to crawl main content
+Allow: /index.html
+Allow: /about.html
+Allow: /contact.html
+
+# Sitemap location
+Sitemap: https://freebookleaf.com/sitemap.xml
+
+# Crawl-delay (optional, removes if not needed)
+# Crawl-delay: 1

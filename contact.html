@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact freebookleaf - get in touch with our team for questions, feedback, or support regarding our free book discovery platform.">
+    <meta name="keywords" content="freebookleaf contact, book discovery support, feedback form, customer service">
+    <meta name="author" content="freebookleaf">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Us - freebookleaf">
+    <meta property="og:description" content="Get in touch with the freebookleaf team for questions, feedback, or support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://freebookleaf.com/contact.html">
+    <meta property="og:site_name" content="freebookleaf">
+    
+    <title>Contact Us - freebookleaf | Get in Touch</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">freebookleaf</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-wrapper">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1>Contact Us</h1>
+                <p class="hero-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="seo-content">
+                <h2>Get in Touch</h2>
+                <p>Have questions about freebookleaf? Found a bug? Have suggestions for improvement? We're here to help. Fill out the form below and our team will get back to you within 24-48 hours.</p>
+                
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your full name" aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="Enter your email address" aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required rows="6" placeholder="How can we help you?" aria-required="true"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                
+                <div id="formMessage" class="form-message"></div>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="seo-content">
+                <h2>Other Ways to Reach Us</h2>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Email</h3>
+                        <p>ambusiness69@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Response Time</h3>
+                        <p>We typically respond within 24-48 hours during business days.</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Social Media</h3>
+                        <p>Follow us for updates and reading recommendations.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Link -->
+            <section class="seo-content">
+                <h2>Quick Answers</h2>
+                <p>Before contacting us, you might find the answer to your question in our <a href="index.html#faq">Frequently Asked Questions</a> section on the homepage. We cover common topics about book availability, account features, and technical issues.</p>
+            </section>
+        </div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="reading-list-panel">
+                <h3>Contact Information</h3>
+                <div class="contact-sidebar">
+                    <p><strong>Email:</strong> ambusiness69@gmail.com</p>
+                    <p><strong>Hours:</strong> Mon-Fri, 9am-5pm UTC</p>
+                    <p><strong>Response:</strong> 24-48 hours</p>
+                </div>
+            </div>
+            <div class="ad-slot ad-skyscraper">
+                <div class="ad-placeholder">
+                    <p>Advertisement (300x600)</p>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>freebookleaf</h4>
+                <p>Your gateway to millions of free books online.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 freebookleaf. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+        
+        document.addEventListener('click', (e) => {
+            if (!navToggle.contains(e.target) && !navMenu.contains(e.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Contact form handling
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Get form values
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Basic validation
+            if (!name || !email || !message) {
+                formMessage.innerHTML = '<p class="error">Please fill in all required fields.</p>';
+                formMessage.style.color = '#e74c3c';
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                formMessage.innerHTML = '<p class="error">Please enter a valid email address.</p>';
+                formMessage.style.color = '#e74c3c';
+                return;
+            }
+            
+            // Simulate form submission
+            formMessage.innerHTML = '<p class="success">Thank you for your message! We will get back to you within 24-48 hours.</p>';
+            formMessage.style.color = '#27ae60';
+            contactForm.reset();
+            
+            // Clear message after 5 seconds
+            setTimeout(() => {
+                formMessage.innerHTML = '';
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

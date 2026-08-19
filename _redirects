@@ -1,0 +1,12 @@
+# Cloudflare Pages Redirects Configuration
+# https://developers.cloudflare.com/pages/platform/redirects/
+
+# Redirect all pages to have trailing slash (optional)
+# /* /index.html 200
+
+# Handle 404 errors by redirecting to custom 404 page
+/errors/404.html /404 404
+/errors/500.html /500 500
+
+# Redirect http to https (Cloudflare Pages does this automatically)
+# http://* https://:splat 301
