@@ -10,14 +10,9 @@ function getApiKey() {
         return 'AIzaSyD30pfnOhtCyexytQPqR4r_OmuNwqY889Y'; // Development key - less restricted
     }
     
-    // Cloudflare Pages preview domains
-    if (hostname.includes('pages.dev')) {
-        return 'AIzaSyD30pfnOhtCyexytQPqR4r_OmuNwqY889Y'; // Staging key - medium restrictions
-    }
-    
-    // Production domain (replace with your actual domain)
-    if (hostname === 'your-production-domain.com' || hostname === 'www.your-production-domain.com') {
-        return 'PRODUCTION_API_KEY_HERE'; // Production key - strict referrer restrictions
+    // Production domain
+    if (hostname === 'freebookleaf.online' || hostname === 'www.freebookleaf.online') {
+        return 'AIzaSyD30pfnOhtCyexytQPqR4r_OmuNwqY889Y'; // Production key - strict referrer restrictions
     }
     
     // Default fallback

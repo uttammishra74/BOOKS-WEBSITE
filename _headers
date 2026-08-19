@@ -1,6 +1,7 @@
 # Cloudflare Pages Headers Configuration
 # https://developers.cloudflare.com/pages/platform/headers/
 
+# Global Security Headers
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff

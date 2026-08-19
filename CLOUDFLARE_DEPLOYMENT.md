@@ -80,8 +80,8 @@ git push
 3. Set **Application Restrictions** → **HTTP referrers**
 4. Add domains:
    - `http://localhost:*` (development)
-   - `https://your-project.pages.dev/*` (Cloudflare Pages)
-   - `https://your-custom-domain.com/*` (production)
+   - `https://freebookleaf.online/*` (production)
+   - `https://www.freebookleaf.online/*` (production with www)
 
 ## 📊 Deployment Checklist
 
@@ -127,13 +127,11 @@ git push
 
 ## 🌐 Post-Deployment Steps
 
-### 1. Update Production API Key
-In `js/config.js`, replace line 20:
-```javascript
-if (hostname === 'your-production-domain.com' || hostname === 'www.your-production-domain.com') {
-    return 'YOUR_PRODUCTION_API_KEY_HERE'; // Strict referrer restrictions
-}
-```
+### 1. Configure Google Cloud Console API Restrictions
+In Google Cloud Console, set referrer restrictions for your API key:
+- Add `https://freebookleaf.online/*`
+- Add `https://www.freebookleaf.online/*`
+- Add `http://localhost:*` for development
 
 ### 2. Test Functionality
 - [ ] Search functionality works

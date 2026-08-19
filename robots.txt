@@ -1,4 +1,4 @@
-# robots.txt for freebookleaf.com
+# robots.txt for freebookleaf.online
 # This file guides web crawlers on which parts of the site to access
 
 User-agent: *
@@ -20,9 +20,11 @@ Disallow: /*.yml$
 Allow: /index.html
 Allow: /about.html
 Allow: /contact.html
+Allow: /privacy.html
+Allow: /terms.html
 
 # Sitemap location
-Sitemap: https://freebookleaf.com/sitemap.xml
+Sitemap: https://freebookleaf.online/sitemap.xml
 
 # Crawl-delay (optional, removes if not needed)
 # Crawl-delay: 1

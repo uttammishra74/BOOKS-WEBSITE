@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <!-- Homepage - Highest priority -->
     <url>
-        <loc>https://freebookleaf.com/</loc>
+        <loc>https://freebookleaf.online/</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
@@ -10,7 +10,7 @@
     
     <!-- About Page -->
     <url>
-        <loc>https://freebookleaf.com/about.html</loc>
+        <loc>https://freebookleaf.online/about.html</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
@@ -18,9 +18,25 @@
     
     <!-- Contact Page -->
     <url>
-        <loc>https://freebookleaf.com/contact.html</loc>
+        <loc>https://freebookleaf.online/contact.html</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
+    </url>
+    
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://freebookleaf.online/privacy.html</loc>
+        <lastmod>2026-08-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Terms of Service -->
+    <url>
+        <loc>https://freebookleaf.online/terms.html</loc>
+        <lastmod>2026-08-19</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
 </urlset>

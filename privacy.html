@@ -1,30 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Privacy Policy - Freebookleaf</title>
-    <link rel="stylesheet" href="Freebookleaf.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for freebookleaf - Learn how we protect your privacy and handle data.">
+    <meta name="keywords" content="freebookleaf privacy policy, data protection, user privacy">
+    <meta name="author" content="freebookleaf">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="96x96" href="favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://freebookleaf.online/privacy.html">
+    
+    <title>Privacy Policy - freebookleaf</title>
+    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="app-container">
-        <header>
-            <div class="header-inner">
-                <div class="logo">
-                    <div class="logo-icon">B</div>
-                    <span class="logo-text">Freebookleaf</span>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">freebookleaf</a>
             </div>
-        </header>
-        <main>
-            <div style="max-width: 800px; margin: 2rem auto;">
-                <h1 style="font-family: 'Fraunces', serif; font-size: 2rem; margin-bottom: 1.5rem;">Privacy Policy</h1>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-wrapper">
+            <section class="legal-section">
+                <h1>Privacy Policy</h1>
+                <p class="last-updated">Last updated: August 2026</p>
                 
                 <h2>1. Information We Collect</h2>
                 <p>Freebookleaf does not collect, store, or share any personal information. We use the Google Books API to search for books, which may collect anonymous usage data as described in Google's Privacy Policy.</p>
                 
                 <h2>2. Google Books API</h2>
-                <p>This website uses the Google Books API to provide book search and preview functionality. When you search for a book, your search query is sent to Google. Google's privacy policy applies to this data collection. You can read Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.</p>
+                <p>This website uses the Google Books API to provide book search and preview functionality. When you search for a book, your search query is sent to Google. Google's privacy policy applies to this data collection. You can read Google's Privacy Policy at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">https://policies.google.com/privacy</a>.</p>
                 
                 <h2>3. Local Storage</h2>
                 <p>Freebookleaf stores your reading list locally in your browser's storage. This data never leaves your device and is not shared with us or any third party.</p>
@@ -37,11 +65,26 @@
                 
                 <h2>6. Contact</h2>
                 <p>If you have any questions, please contact us at: <a href="mailto:ambusiness69@gmail.com">ambusiness69@gmail.com</a></p>
-                
-                <p style="margin-top: 2rem; font-size: 0.875rem; color: var(--muted-foreground);">Last updated: August 2026</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
             </div>
-        </main>
-        <footer>Freebookleaf — Discover your next great read</footer>
-    </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 freebookleaf. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

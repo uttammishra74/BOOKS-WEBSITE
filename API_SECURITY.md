@@ -23,9 +23,9 @@ Your Google Books API key is currently exposed in client-side code (`js/config.j
    
    **Option A: HTTP Referrer (Recommended for static sites)**
    - Select "HTTP referrers"
-   - Add your production domain: `https://yourdomain.com/*`
+   - Add your production domain: `https://freebookleaf.online/*`
+   - Add your production domain with www: `https://www.freebookleaf.online/*`
    - Add your development domain: `http://localhost:*`
-   - Add your Cloudflare Pages domain: `https://your-project.pages.dev/*`
    
    **Option B: IP Address (If you have static IP)**
    - Select "IP addresses"
@@ -68,10 +68,10 @@ const getApiKey = () => {
   
   if (hostname === 'localhost' || hostname === '127.0.0.1') {
     return 'DEV_API_KEY'; // Less restricted
-  } else if (hostname.includes('pages.dev')) {
-    return 'STAGING_API_KEY'; // Medium restrictions
-  } else {
+  } else if (hostname === 'freebookleaf.online' || hostname === 'www.freebookleaf.online') {
     return 'PRODUCTION_API_KEY'; // Strict restrictions
+  } else {
+    return 'DEFAULT_API_KEY'; // Fallback
   }
 };
 
