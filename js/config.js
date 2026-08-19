@@ -1,12 +1,6 @@
 // Configuration file for environment variables
 // Domain-based API key selection for enhanced security
 
-// Configuration object
-const CONFIG = {
-    API_TIMEOUT: 10000, // 10 seconds
-    MAX_RETRIES: 3,
-};
-
 // Domain-based API key selection
 function getApiKey() {
     const hostname = window.location.hostname;
@@ -30,12 +24,15 @@ function getApiKey() {
     return 'AIzaSyD30pfnOhtCyexytQPqR4r_OmuNwqY889Y';
 }
 
-// Set the API key
-CONFIG.GOOGLE_BOOKS_API_KEY = getApiKey();
+// Configuration object
+const CONFIG = {
+    GOOGLE_BOOKS_API_KEY: getApiKey(),
+    API_TIMEOUT: 10000, // 10 seconds
+    MAX_RETRIES: 3,
+};
 
 // Initialize configuration
 function loadConfig() {
-    // Configuration is now loaded via getApiKey function
     console.log('Environment:', window.location.hostname);
     console.log('API Key loaded securely');
 }
