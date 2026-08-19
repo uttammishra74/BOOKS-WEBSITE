@@ -1,7 +1,14 @@
 # Cloudflare Pages Headers Configuration
 # https://developers.cloudflare.com/pages/platform/headers/
 
-# Global Security Headers
+# Prevent indexing on preview domains
+https://*.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+
+# Global Security Headers for production
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff

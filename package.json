@@ -7,7 +7,7 @@
     "dev": "python -m http.server 8000",
     "build": "echo Static site - no build required",
     "preview": "npm run dev",
-    "deploy": "wrangler pages deploy . --project-name freebookleaf",
+    "deploy": "wrangler pages deploy . --project-name freebookleaf --branch main",
     "deploy:prod": "wrangler pages deploy . --project-name freebookleaf --branch main"
   },
   "keywords": [
