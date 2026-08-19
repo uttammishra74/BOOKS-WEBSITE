@@ -24,6 +24,9 @@
 /*.svg
   Cache-Control: public, max-age=31536000, immutable
 
+/*.ico
+  Cache-Control: public, max-age=31536000, immutable
+
 /*.woff
   Cache-Control: public, max-age=31536000, immutable
 
@@ -33,3 +36,13 @@
 # HTML files should be cached for shorter time
 /*.html
   Cache-Control: public, max-age=3600
+
+# Favicon files - cache for 1 year for better performance
+/favicon.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+/favicon.svg
+  Cache-Control: public, max-age=31536000, immutable
+
+/favicon-*.png
+  Cache-Control: public, max-age=31536000, immutable
