@@ -24,3 +24,6 @@ build/
 # Logs
 *.log
 npm-debug.log*
+
+# Wrangler cache
+.wrangler/
