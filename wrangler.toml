@@ -5,13 +5,5 @@
 name = "freebookleaf"
 compatibility_date = "2024-01-01"
 
-# This is a static site configuration for Cloudflare Pages
-# For static sites, most configuration is done in the Cloudflare Pages dashboard
-# This file is minimal and mainly for Wrangler compatibility
-
-[build]
-command = "echo 'Static site - no build required'"
-cwd = "."
-
-# Specify the directory of static files to upload
+# For static sites, specify the directory containing the files to upload
 pages_build_output_dir = "."
